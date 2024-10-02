@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <form action="#" class="form" method="post">
+        <h1>Registration</h1>
+        <div class="names">
+          <div class="first">
+            <div class="input-box">
+              <label>Full Name </label>
+              <input
+                id="name"
+                type="text"
+                name="fullname"
+                placeholder="Eg: John Wick"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label>User Name</label>
+              <input
+                id="username"
+                type="text"
+                name="username"
+                placeholder="Eg: John_Wick1"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <div class="second">
+            <div class="input-box">
+              <label>Email </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Eg: johnwick@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Eg: 9876567890"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="PassWord">
+          <div class="third">
+            <div class="input-box">
+              <label>Password </label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="**********"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label>Conform Password</label>
+              <input
+                id="confirmPassword"
+                type="password"
+                name="confirmPassword"
+                placeholder="**********"
+                minlength="6"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="gender">
+          <div class="forth">
+            <div class="input-box radio">
+              <label>Gender</label>
+
+              <div class="gender-options">
+                <input
+                  class="gender-btn"
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  required
+                />
+                <label class="gender-type">Male</label>
+                <input
+                  class="gender-btn"
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  required
+                />
+                <label class="gender-type">Female</label>
+                <input
+                  class="gender-btn"
+                  type="radio"
+                  name="gender"
+                  value="other"
+                  required
+                />
+                <label class="gender-type">Other</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn">
+          <button>Register</button>
+        </div>
+      </form>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
