@@ -9,8 +9,8 @@ let conformPassword = document.querySelector("#confirmPassword");
 
 let register = document.querySelector(".btn");
 
-if (password && conformPassword) {
-  register.addEventListener("click", function () {
+register.addEventListener("click", function () {
+  if (password.value === conformPassword.value) {
     console.log(
       "Name: " + namee.value,
       "Username: " + username.value,
@@ -19,5 +19,7 @@ if (password && conformPassword) {
       "Password: " + password.value,
       "Confirm Password: " + conformPassword.value
     );
-  });
-}
+  } else {
+    return console.log("password does not match");
+  }
+});
