@@ -7,6 +7,7 @@ let phoneNumber = document.querySelector("#phone");
 let password = document.querySelector("#password");
 let conformPassword = document.querySelector("#confirmPassword");
 
+let gender = document.querySelector(".gender");
 let register = document.querySelector(".btn");
 
 register.addEventListener("click", function () {
